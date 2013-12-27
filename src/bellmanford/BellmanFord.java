@@ -27,17 +27,6 @@ public class BellmanFord {
             {max, max, max, max, 6, 4, 3, 0, 2},
             {max, max, max, max, max, 1, max, 2, 0},};
         
-//        for(int i=0;i<8;i++){
-//        Distance(i,origin);
-//        System.out.println();
-//        System.out.println();
-//            for(int j=0;j<distance[i].length;j++){
-//                System.out.println();
-//                for(int k=0;k<distance[i].length;k++){
-//                    System.out.print(distance[i][j][k]+"\t");
-//                }
-//            }
-//        }
         
         int m=origin.length-1;
         Distance(m,origin);
@@ -70,7 +59,7 @@ public class BellmanFord {
     }
     
     
-    
+    // find the shorest distance between two points using Bellmanford algorithm
     public static void Distance(int n, int[][] origin){       
         if (n > 0) {
             Distance(n - 1, origin);
